@@ -4,15 +4,13 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("blog")).sort((a, b) => a.data.sortOrder - b.data.sortOrder);
 
-const last_posts = posts.slice(0, 3);
 ---
 
-<BaseLayout sideBarActiveItemID="home">
+<BaseLayout sideBarActiveItemID="aws">
   <div class="pb-12 mt-5">
-    <div class="text-5xl font-bold">Nigel Aukland</div>
-    <div class="text-3xl py-3 font-bold">AWS Developer Associate</div>
+    <div class="text-3xl font-bold">Nigel Aukland : AWS Developer Associate</div>
     <div class="py-2">
       <text class="text-lg">
         I have put this page together to demonstrate the concepts that I've learned while studying for the 
@@ -25,11 +23,11 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">Networking and Content Delivery</div>
+    <div class="text-3xl w-full font-bold mb-2">Serving this static website</div>
   </div>
 
   {
-    last_posts.map((post) => (
+    posts.map((post) => (
       <>
         <HorizontalCard
           title={post.data.title}

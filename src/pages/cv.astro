@@ -3,90 +3,178 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
+<BaseLayout title="Nigel Aukland CV" sideBarActiveItemID="cv">
+  <div class="mt-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="mt-5 mb-10 text-justify">
+    Experienced in definition and management of data-related products for
+    organisations in telecoms, retail and digital tech. My ambition is to work
+    with the best data product managers and engineers in the field to define and
+    engineer scalable data platforms for the future. Those that scale not just
+    for volume but for use cases from enterprise analytics to machine learning.
+    So that we can be ready for when the next business opportunity arises.
   </div>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
   </div>
 
-  <div class="time-line-container grid gap-4 mb-10">
+  <div class="time-line-container grid gap-4 mb-5">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="MEng. Electrical and Electronic Engineering"
+      subtitle="1996 to 2000 at Imperial College, London"
     />
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">Recent Experience</div>
   </div>
 
-  <div class="time-line-container mb-10">
+  <div class="time-line-container mb-5">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Technical Product Owner - Data Engineering"
+      subtitle="July 2023 - present | Sony Interactive Entertainment (PlayStation), London, UK"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Building a data engineering platform capable of supporting effective and
+      innovative data engineering at PlayStation.
+      <ul class="list-disc pl-5">
+        <li>
+          Platform Agility: Defining Infrastructure as Code to ensure agility in
+          deploying new platforms for feature development.
+        </li>
+        <li>
+          Developer Agility: Data engineering frameworks to ensure effective
+          development practices for 30+ engineers.
+        </li>
+        <li>
+          Pioneering concepts: Real time data streaming, customer attribute
+          federation.
+        </li>
+      </ul>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Data Product Manager"
+      subtitle="April 2014 - June 2023 | Sony Interactive Entertainment (PlayStation), London, UK"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      (Aug 2018 - June 2023)
+      <ul class="list-disc pl-5">
+        Staff Product Manager, ensuring that PlayStation's commercial business
+        is supported with reusable, robust and scalable data products, both
+        today and in the long term.
+      </ul>
+      (Nov 2016 - Jul 2018)
+      <ul class="list-disc pl-5">
+        Product Owner for PlayStation Europe's core business performance
+        reporting.<br />Delivery of curated dashboards and reports to
+        PlayStation Europe executive management.
+      </ul>
+      (Apr 2014 - Oct 2016)
+      <ul class="list-disc pl-5">
+        Product Owner for a team delivering data products and insight relating
+        to aspects of player behaviour across PlayStation devices and the
+        PlayStation Network.<br />Own the BI product backlog in a Scaled Agile
+        Framework (SAFe) using Scrum.
+      </ul>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Co-founder - Project Vola"
+      subtitle="December 2021 to April 2023"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Full end to end system built primarily but not exclusively to profit from
+      volatility in currency exchange markets.
+
+      <ul class="list-disc pl-5">
+        <li>
+          Models to create value from volatility: Development of AI/ML time
+          series models (LSTM neural networks: classifiers and regressors),
+          logistic regression
+        </li>
+
+        <li>
+          Implementation of imbalanced classification techniques to capture
+          high-value but infrequent trading opportunities involving: Custom loss
+          functions, smote, custom feature engineering, grid search, scaling &
+          transforming, custom metrics.
+        </li><li>
+          Training, validation and testing of models evaluated via statistical
+          bootstrap techniques.
+        </li><li>Codebase & Tools: Python, Tensorflow, neptune.ai.</li>
+      </ul>
     </TimeLineElement>
   </div>
 
-  <div class="mb-5">
+  <div class="mb-5 mt-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
+  <ul class="list-disc mx-6 mb-10 grid gap-3">
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a
+        href="https://cp.certmetrics.com/amazon/en/public/verify/credential/V6EDQEK1X2141TS7"
+        target="_blank"
+      >AWS: Certified Cloud Practitioner</a
+      >
     </li>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a
+        href="https://www.coursera.org/account/accomplishments/verify/LJZ44T9M6XM6"
+        target="_blank">Coursera: Custom and Distributed Training with TensorFlow</a
+      >
     </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/verify/SW6Q7A24H4UR"
+        target="_blank"
+        >Coursera: Custom Models, Layers, and Loss Functions with TensorFlow</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/verify/E53RNGLLG5ZD"
+        target="_blank"
+      >Coursera: Convolutional Neural Networks
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/specialization/YS8PAAAZEQZ9"
+        target="_blank"
+      >Coursera: Deep Learning Specialization
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/verify/DNF9LENM67EB"
+        target="_blank"
+      >Coursera: Sequence Models</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/verify/PZJ4KMBQ8DD9"
+        target="_blank"
+        >Coursera: Structuring Machine Learning Projects
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/verify/QLAFECP29HBK"
+        target="_blank"
+        >Coursera: Improving Deep Neural Networks: Hyperparameter Tuning, Regularization
+        and Optimization
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.coursera.org/account/accomplishments/verify/NH4FEDRPH4US"
+        target="_blank"
+        >Coursera: Neural Networks and Deep Learning
+      </a>
+    </li>
+    <li>
+      <a href="" target="_blank">Scrum Alliance: Certified Scrum Product Owner </a>
+    </li>
   </ul>
 </BaseLayout>
