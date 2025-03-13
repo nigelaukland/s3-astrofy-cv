@@ -19,7 +19,7 @@ In this scenario Elastic Beanstalk has been used for two purposes. Firstly to ta
 2. Versioning and deployment
 * For an application `nigelaukland-eb-1`, two enironments: 
   
-  * `nigelaukland-eb-1-dev`: Dev environment running v2.1 (blue)
+  * `nigelaukland-eb-1-dev`: Dev environment running v2.3 (blue)
   * 🔗 http://eb-dev.nigelaukland.com (http only)
   
   * `nigelaukland-eb-1-prod2`: Prod environent running v2.2 (green)
