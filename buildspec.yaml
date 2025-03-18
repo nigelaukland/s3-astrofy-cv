@@ -25,3 +25,4 @@ artifacts:
   files:
     - '**/*'
   base-directory: 'dist'
+  name: nigelaukland
