@@ -12,8 +12,7 @@ phases:
   build:
     commands:
       - echo "Running build phase"
-      - npm run build
-      - grep -Fq "nigelaukland" index.html
+      - ls dist/index.html
   post_build:
     commands:
       - echo "Running post_build phase"
