@@ -13,6 +13,8 @@ phases:
     commands:
       - echo "Running build phase"
       - ls dist/index.html
+      - cd dist
+      - ls
   post_build:
     commands:
       - echo "Running post_build phase"
