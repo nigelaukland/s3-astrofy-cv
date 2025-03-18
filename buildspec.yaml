@@ -1,0 +1,23 @@
+version: 0.2
+
+phases: 
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo "Running install phase"
+  pre_build:
+    commands: 
+      - echo "Running pre_build phase"
+  build:
+    commands:
+      - echo "Running build phase"
+      - npm run build
+      - grep -Fq "nigelaukland" index.html
+  post_build:
+    commands:
+      - echo "Running post_build phase"
+
+artifacts:
+  files:
+    - dist/*
