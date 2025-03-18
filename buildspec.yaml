@@ -10,7 +10,9 @@ phases:
     commands: 
       - echo "Running pre_build phase"
       - echo "Removing existing build"
+      - aws s3 ls s3://www.nigelaukland.com
       - aws s3 rm s3://www.nigelaukland.com/* --recursive
+      - aws s3 ls s3://www.nigelaukland.com
   build:
     commands:
       - echo "Running build phase"
