@@ -72,7 +72,7 @@ const dt_posts = (await getCollection("blog", ({ data }) => {
 {
     dt_posts.map((post) => (
       <>
-        <HorizontalCard
+        <HorizontalCardNoLink
           title={post.data.title}
           img={post.data.heroImage}
           desc={post.data.description}
