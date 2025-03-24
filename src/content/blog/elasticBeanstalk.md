@@ -1,9 +1,9 @@
 ---
 sortOrder: 4
-title: "Elastic Beanstalk"
+title: "Elastic Beanstalk 🔗"
 description: "Elastic Beanstalk can be used to manage and deploy web applications. It handles the infrastructure and networking allowing you to focus on aspects of the web application. Click to find out more 🙂"
 category: "Elastic Beanstalk"
-pubDate: "13 Feb 2025"
+pubDate: "13 February 2025"
 heroImage: "/AWS-Elastic-Beanstalk.png"
 ---
 
