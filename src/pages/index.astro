@@ -13,6 +13,8 @@ const dt_posts = (await getCollection("blog", ({ data }) => {
   return data.category == "Developer Tools";})).sort((a, b) => a.data.sortOrder - b.data.sortOrder);
 const containers_posts = (await getCollection("blog", ({ data }) => {
   return data.category == "Containers";})).sort((a, b) => a.data.sortOrder - b.data.sortOrder);
+const serverless = (await getCollection("blog", ({ data }) => {
+  return data.category == "Serverless Computing";})).sort((a, b) => a.data.sortOrder - b.data.sortOrder);
 ---
 
 <BaseLayout title="Nigel Aukland | AWS" sideBarActiveItemID="aws">
@@ -105,4 +107,22 @@ const containers_posts = (await getCollection("blog", ({ data }) => {
   ))
 }
 
+<div>
+    <div class="text-3xl w-full font-bold mb-2">Serverless Computing</div>
+  </div>
+
+  {
+    serverless.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+      </>
+    ))
+  }
 </BaseLayout>
