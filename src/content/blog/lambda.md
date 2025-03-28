@@ -18,7 +18,7 @@ To do so, I implemented the following:
 
 2. Application
 * A *lambda function* called `get-average-btc-price` was implemented in python which when run will access the public Binance API market data endpoint to obtain the latest average selling price for Bitcoin in USDT.
-* The result is then formed into a html response which is returned form the function.
+* The result is then formed into a html response which is returned from the function.
 * This is all run synchronously.
 
 3. Load Balancing
