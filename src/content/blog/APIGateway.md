@@ -35,4 +35,4 @@ Steps involved:
 
 ![API Gateway stage mappings.](/images/STAGES.png)
 
-5. And lastly a configuration of Route53 to map the domain `api.nigelaukland.com` to the API Gateway provided gateway URL.
+5. And lastly a configuration of Route 53 to map the domain `api.nigelaukland.com` to the API Gateway provided gateway URL.
