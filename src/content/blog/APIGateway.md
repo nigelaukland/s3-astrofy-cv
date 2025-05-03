@@ -9,6 +9,8 @@ heroImage: "/AWS-API-Gateway.png"
 
 Simple demonstration of API Gateway. The only coding involved was a Python function running on AWS Lambda which is responsible for forming the JSON payload response.
 
+_Note: API URLs are offline to manage costs_
+
 Steps involved:
 
 1. Creation of an API Gateway with two routes:

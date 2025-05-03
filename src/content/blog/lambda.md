@@ -7,6 +7,8 @@ pubDate: "27 March 2025"
 heroImage: "/AWS-Lambda.png"
 ---
 
+_Note: Lambda URLs are offline to manage costs_
+
 AWS manages the provisioning of the compute and runtime environment, supporting node, python and other runtimes. In this simple example I have used lambda to provide the latest Bitcoin price to the user when accessing the page:
 
 🔗 https://lambda.nigelaukland.com 

@@ -9,6 +9,8 @@ heroImage: "/AWS-Elastic-Beanstalk.png"
 
 In this scenario Elastic Beanstalk has been used for two purposes. Firstly to take control of the instrastructue aspects. Secondly to manage the versioning and deployment of a simple demo web application (node.js backend). 
 
+_Note: URLs are offline to manage costs_
+
 1. Infrastructure
 * S3 storage for the code distributions
 * Security groups for appropriate communication between services

@@ -7,6 +7,8 @@ pubDate: "23 March 2025"
 heroImage: "/AWS-ECS.png"
 ---
 
+_Note: ECS & Fargate URLs are offline to manage costs_
+
 For the purpose of this demo, a simple static website has been built and served using httpd. Both the website content and the web server are bundled into a Docker container and from that point the following AWS services are employed:
 
 1. **Elastic Container Registry (ECR)**
